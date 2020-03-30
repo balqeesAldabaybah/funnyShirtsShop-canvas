@@ -18,7 +18,7 @@ context.lineTo(150, 0);
 context.bezierCurveTo(70, 100, 35, 10, 35, 0);
 // complete custom shape
 context.closePath();
-context.lineWidth = 5;
+context.lineWidth = 3;
 
-context.strokeStyle = 'blue';
+context.strokeStyle = 'white';
 context.stroke();
