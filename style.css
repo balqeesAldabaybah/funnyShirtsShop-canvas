@@ -1,133 +1,63 @@
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
-  .centered {
-    position: absolute;
-     top: 35%;
-    left: 40%; 
-    transform: translate(-50%, -50%);
-  }
-
-  .buttons{
-      width: 45%;
-      margin: auto;
-      display: flex;
-      justify-content: space-evenly;
-
-  }
-
-  .btn{
-      width: 48px;
-      height: 25px;
-      border: none;
-  }
-
-  #blue{
-      background-color: blue;
-  }
-  #red{
-      background-color: red;
-  }
-  #yellow{
-      background-color: yellow;
-  }
-  #green{
-      background-color: green;
-  }
-
-  #number{
-      width: 40px;
-  }
-
-  nav{
-      width: 100%;
-      overflow: hidden;
-      background-color: #333;
-  }
-
-  nav a{
-      float: left;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-  }
-
-fieldset{
-    padding: 0.7em;
-    background-color: white;
+nav {
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
 }
 
-
-
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float: left;
-
-    padding: 10px;
-    height:100vh; /* Should be removed. Only for demonstration */
-  }
-  
- 
-  .col-right{
-      float: right;
-    width: 77%;
-  }
-
-  .row{
-      width: 100%;
-  }
-
-  .li-item{
-    width:50%;
-    position: relative;
-  }
-
-  .li-img{
-    margin-right: 1em;
-  }
-
-  .li-text{
-    position: absolute;
-    top: 27%;
-    left: 8%;
-    width: 5%;
-  }
-
-  .li-details{
-    float: right;
-  }
-
-  #total-cost{
-    width: fit-content; margin-left: 55em;
-  }
-
-#menu a:hover,legend {
-    background-color: lightseagreen;
-}
-
-#submit{
-  background-color: lightskyblue; /* Green */
-  border: white;
+nav a {
+  float: left;
   color: white;
   text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  padding: 10px 24px;
+  font-size: 17px;
 }
 
-input[type=text] {
-  padding: 0.1em;
+#menu a:hover,
+legend {
+  background-color: lightseagreen;
+}
 
+input[type="text"] {
+  padding: 0.1em;
+}
+
+header {
+  background-color: lightseagreen;
+  padding: 1%;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+header h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: lightseagreen;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 30%;
+  height: 100vh;
+  border: 3px solid lightseagreen;
+  text-align: center;
+  background-color: lightseagreen;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
 }

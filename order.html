@@ -6,22 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
 
+        .centered {
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+
+        .buttons {
+            width: 45%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .btn {
+            width: 48px;
+            height: 25px;
+            border: none;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        #number {
+            width: 40px;
+        }
+
+        .li-item {
+            width: 50%;
+            position: relative;
+        }
+
+        .li-img {
+            margin-right: 1em;
+        }
+
+        .li-text {
+            position: absolute;
+            top: 27%;
+            left: 8%;
+            width: 5%;
+        }
+
+        .li-details {
+            float: right;
+        }
+
+        #total-cost {
+            width: fit-content;
+            margin-left: 55em;
+        }
+
+        #submit {
+            background-color: lightskyblue;
+            /* Green */
+            border: white;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            padding: 10px 24px;
+        }
+
+        aside {
+            padding-left: 30%;
+            height: 100vh;
+            padding-top: 5em;
+        }
+
+        fieldset {
+            padding-top: 0.8em;
+            padding-bottom: 0.8em;
+            background-color: white;
+            margin: 1.5em;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div>
-        <nav id="menu">
-            <a href="index.html">Home</a>
-            <a href="order.html">Order</a>
-            <a href="#">Contact</a>
-            <a href="#">Log Out</a>
+    <header>
+        <h1>Funny T-shirt Shop </h1>
+        <h4>DDESIGN AND MAKE YOUR FAVORITE SHIRT</h4>
+    </header>
 
-        </nav>
-    </div>
-    <div class="row">
-        <div class="column col-left" style="background-color:lightseagreen;">
+    <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="order.html">Order</a>
+        <a href="#">Contact</a>
+        <a href="#">Log Out</a>
+
+    </nav>
+
+    <section>
+
+
+        <article>
             <div class="container">
                 <strong>
                     <div class="centered" id="tshirt-text">Sample Text</div>
@@ -59,17 +164,19 @@
                 <button id="submit">Submit Order</button>
                 <div class="buttons" id="error-message" style="color: red;"></div>
             </center>
-        </div>
-        <div class="column col-right" style="border: 4px solid lightseagreen;">
+        </article>
+        <aside>
             <div id="total-cost"> </div>
             <hr />
             <div id="div-lists">
-
-
             </div>
             <ul id="lists" type="none"></ul>
-        </div>
-    </div>
+        </aside>
+    </section>
+
+    <footer>
+        <h5>copyrights 2020 , All right reserved.</h5>
+    </footer>
 </body>
 
 

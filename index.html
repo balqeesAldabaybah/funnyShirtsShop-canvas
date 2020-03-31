@@ -1,24 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Funny T-shirt</title>
+    <style>
+        #aside-title {
+            padding-left: 15%;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        #pkg-name td {
+            font-weight: bold;
+            font-size: large;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #features td,
+        #features td ul li {
+            padding: 0.5em;
+        }
+
+        #price td {
+            text-align: center;
+            font-size: larger;
+        }
+
+        aside {
+            padding-left: 40%;
+            height: 100vh;
+            padding-top: 5em;
+        }
+    </style>
 </head>
+
 <body>
     <div>
+        <header>
+            <h1>Funny T-shirt Shop </h1>
+            <h4>DDESIGN AND MAKE YOUR FAVORITE SHIRT</h4>
+        </header>
         <nav id="menu">
             <a href="index.html">Home</a>
             <a href="order.html">Order</a>
             <a href="">Contact</a>
             <a href="">Log Out</a>
-
         </nav>
-        <center>
-            <h1>Funny T-shirt  HOME PAGE </h1>
-        </center>
-        
+        <section>
+
+
+            <article>
+                <img src="Tshirt.png" id="tshirt" alt="tshirt" width="250px" style="background-color:green">
+                <p>
+                    <h3 style="margin-top: 3em; word-spacing: 0.5em;"> This is shop allow you to desgin uour own shirt,
+                        and let the <span style="color:white">CREATIVITY</span> explode</h3>
+                </p>
+            </article>
+            <aside>
+                <h2 id="aside-title"> SEASON SALES , BUY NOW</h2>
+                <table border="1">
+                    <caption>OUR SHIRTS PACKAGES</caption>
+                    <tr id="pkg-name">
+                        <td> FIRST TIME <br /> <span style="color:lightseagreen">BUY NOW</span> </td>
+                        <td> Premuim </td>
+                        <td> VIP </td>
+                    </tr>
+                    <tr id="features">
+                        <td>
+                            <ul>
+                                <li>One shirt </li>
+                                <li>Red color</li>
+                                <li>with a TEXT you choose (Up to 25 letters) </li>
+                                <li>shipment: 7-9 work days</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Three shirt </li>
+                                <li> COLORs that you choose, from what we already provide</li>
+                                <li> with TEXTs you choose (Up to 50 letters) </li>
+                                <li> shipment: 5 work days</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Up to 20 shirts </li>
+                                <li>you can even pick any color, and we will make it for you</li>
+                                <li>ANY TEXT</li>
+                                <li>shipment: 1-2 work days</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr id="price">
+                        <td style="background-color: lightseagreen;">
+                            Free
+                        </td>
+                        <td>
+                            10.99 $
+                        </td>
+                        <td>
+                            20.99 $
+                        </td>
+                    </tr>
+                </table>
+            </aside>
+        </section>
+        <footer>
+            <h5>copyrights 2020 , All right reserved.</h5>
+        </footer>
     </div>
 </body>
+
 </html>
