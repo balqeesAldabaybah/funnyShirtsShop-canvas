@@ -18,6 +18,8 @@
             top: 35%;
             left: 40%;
             transform: translate(-50%, -50%);
+            font-size: 1.5em; 
+            color: chartreuse;
         }
 
         .buttons {
@@ -103,7 +105,7 @@
             padding-top: 0.8em;
             padding-bottom: 0.8em;
             background-color: white;
-            margin: 1.5em;
+            margin: 0.5em;
         }
     </style>
 </head>
@@ -159,6 +161,15 @@
                     <input type="number" id="number" min="1">
                 </div>
             </fieldset>
+
+            <fieldset>
+                <legend>Calculate price</legend>
+                <div class="buttons">
+                    <button id="Cal_price"> Calculate  </button>
+                    <div id="price" > </div>
+                </div>
+            </fieldset>
+            
 
             <center>
                 <button id="submit">Submit Order</button>

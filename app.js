@@ -34,6 +34,9 @@ document.getElementById('shirt-text-button').addEventListener('click', (e) => {
 
 })
 
+document.getElementById("Cal_price").addEventListener('click' , ()=>{
+    document.getElementById("price").innerHTML = document.getElementById('number').value * 4 + '£';
+});
 document.getElementById('submit').addEventListener('click', () => {
     if (document.getElementById('number').value == 0) {
         document.getElementById('error-message').innerHTML = "At least 1 shirt must be ordered!"
